@@ -1,0 +1,48 @@
+Virtual environment,
+venv/
+env/
+
+Python cache,
+pycache/
+*.py[cod]
+$py.class
+
+Django migrations (opsional kalau mau diabaikan sementara),
+**/migrations/.pyc
+**/migrations/pycache/
+
+SQLite database (jika digunakan),
+db.sqlite3
+
+IDE/editor config files,
+.vscode/
+.idea/
+*.swp
+
+Logs,
+*.log
+
+Environment variable files,
+.env
+*.env
+
+Static/media files (opsional, tergantung cara kelola),
+staticfiles/
+media/
+
+Byte-compiled and distribution,
+*.egg-info/
+*.egg
+dist/
+build/
+
+Coverage/testing,
+htmlcov/
+coverage.xml
+*.cover
+.pytest_cache/
+.tox/
+
+OS-specific,
+.DS_Store
+Thumbs.db
