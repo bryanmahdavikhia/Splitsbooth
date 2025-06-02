@@ -1,0 +1,11 @@
+<form method="POST" action="{% url 'list_activities:select' %}">
+  {% csrf_token %}
+  <h2>Select an Activity</h2>
+  {% for activity in activities %}
+    <div>
+      <input type="radio" name="activity_id" value="{{ activity.id }}" required>
+      {{ activity.name }} - {{ activity.distance|floatformat:2 }}m
+    </div>
+  {% endfor %}
+  <button type="submit">Next</button>
+</form>

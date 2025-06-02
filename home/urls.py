@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from .views import input_view
 
+app_name = 'home'
 urlpatterns = [
-    path('', views.oauth_input, name='oauth_input'),
+    path('', input_view, name='input')
 ]
